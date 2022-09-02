@@ -49,12 +49,21 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = ['ci-drf-api-qa.herokuapp.com', 'localhost']
 
 
-CORS_ALLOWED_ORIGINS = [
-    # 'http://127.0.0.1:8000',
-    'http://localhost:3000', 
-    'https://ci-react-qa.herokuapp.com/',
+CORS_ORIGIN_ALLOW_ALL = False
 
-]
+CORS_ORIGIN_WHITELIST = (
+
+       'http://localhost:5000',
+
+)
+
+
+# CORS_ALLOWED_ORIGINS = [
+#     # 'http://127.0.0.1:8000',
+#     'http://localhost:3000', 
+#     'https://ci-react-qa.herokuapp.com/',
+
+# ]
 
 CORS_ALLOW_METHODS = [
     "DELETE",
