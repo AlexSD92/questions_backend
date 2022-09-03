@@ -6,7 +6,7 @@ from .serializers import ProfileSerializer
 from rest_framework import generics, permissions
 from drf.permissions import IsOwnerOrReadOnly
 
-class ProfileList(generics.ListAPIView):
+class ProfileList(generics.ListCreateAPIView):
     serializer_class = ProfileSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Profile.objects.all()
