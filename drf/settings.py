@@ -54,7 +54,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
 
        'http://localhost:3000',
-       'https://3000-alexsd92-qafrontend-20r7c0v11u6.ws-eu63.gitpod.io/',
+       'https://3000-alexsd92-qafrontend-20r7c0v11u6.ws-eu63.gitpod.io',
 
 )
 
